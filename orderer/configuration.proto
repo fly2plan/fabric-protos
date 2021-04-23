@@ -16,7 +16,7 @@ package orderer;
 //   the encoded value is the proto message "ConsensusType"
 
 message ConsensusType {
-    // The consensus type: "solo", "kafka" or "etcdraft".
+    // The consensus type: "solo", "kafka", "etcdraft", or "mirbft".
     string type = 1;
     // Opaque metadata, dependent on the consensus type.
     bytes metadata = 2;
