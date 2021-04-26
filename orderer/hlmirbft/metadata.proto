@@ -4,12 +4,12 @@
 
 syntax = "proto3";
 
-option go_package = "github.com/harrymknight/fabric-protos-go/orderer/mirbft";
-option java_package = "org.harrymknight.fabric.protos.orderer.mirbft";
+option go_package = "github.com/harrymknight/fabric-protos-go/orderer/hlmirbft";
+option java_package = "org.harrymknight.fabric.protos.orderer.hlmirbft";
 
-package mirbft;
+package hlmirbft;
 
-// BlockMetadata stores data used by the Raft OSNs when
+// BlockMetadata stores data used by the MirBFT OSNs when
 // coordinating with each other, to be serialized into
 // block meta dta field and used after failres and restarts.
 message BlockMetadata {

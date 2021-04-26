@@ -4,10 +4,10 @@
 
 syntax = "proto3";
 
-option go_package = "github.com/harrymknight/fabric-protos-go/orderer/mirbft";
-option java_package = "org.harrymknight.fabric.protos.orderer.mirbft";
+option go_package = "github.com/harrymknight/fabric-protos-go/orderer/hlmirbft";
+option java_package = "org.harrymknight.fabric.protos.orderer.hlmirbft";
 
-package mirbft;
+package hlmirbft;
 
 // ConfigMetadata is serialized and set as the value of ConsensusType.Metadata in
 // a channel configuration when the ConsensusType.Type is set "mirbft".
