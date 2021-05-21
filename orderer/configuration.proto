@@ -4,8 +4,8 @@
 
 syntax = "proto3";
 
-option go_package = "github.com/harrymknight/fabric-protos-go/orderer";
-option java_package = "org.harrymknight.fabric.protos.orderer";
+option go_package = "github.com/fly2plan/fabric-protos-go/orderer";
+option java_package = "org.fly2plan.fabric.protos.orderer";
 
 package orderer;
 
