@@ -19,8 +19,8 @@ message BlockMetadata {
     // Carries the Raft ID value that will be assigned
     // to the next OSN that will join this cluster.
     uint64 next_consenter_id = 2;
-    // Index of etcd/raft entry for current block.
-    uint64 raft_index = 3;
+    // Index of mirbft entry for current block.
+    uint64 mirbft_index = 3;
 }
 
 // ClusterMetadata encapsulates metadata that is exchanged among cluster nodes
