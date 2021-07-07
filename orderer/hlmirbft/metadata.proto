@@ -14,12 +14,12 @@ package hlmirbft;
 // block meta dta field and used after failres and restarts.
 message BlockMetadata {
     // Maintains a mapping between the cluster's OSNs
-    // and their Raft IDs.
+    // and their MIrBFT IDs.
     repeated uint64 consenter_ids = 1;
-    // Carries the Raft ID value that will be assigned
+    // Carries the MirBFT ID value that will be assigned
     // to the next OSN that will join this cluster.
     uint64 next_consenter_id = 2;
-    // Index of mirbft entry for current block.
+    // Index of MirBft entry for current block.
     uint64 mirbft_index = 3;
 }
 
