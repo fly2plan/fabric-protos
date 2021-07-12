@@ -47,5 +47,12 @@ message Options {
     // result is computed, watermarks cannot advance).  This should be set
     // to a minimum of a few MB.
     uint32 BufferSize = 4;
+    
+    
+     //JIRA FLY2-103 Adding Protocol parameters to config metadata
+    int32  CheckpointInterval = 5;
+    uint64 MaxEpochLength = 6;
+    int32  NumberOfBuckets  = 7;
+
 
 }
