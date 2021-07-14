@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/fly2plan/fabric-protos-go/orderer/hlmirbft";
+option java_package = "org.fly2plan.fabric.protos.orderer.hlmirbft";
+
+package hlmirbft;
+
+//SnapData is used to pass the bytes of the last commited block and NetworkState_Config from snap
+message SnapData {
+  //byte array of last commited block
+  bytes last_commited_block =1;
+ //byte array of NetworkState_Config
+  bytes network_state = 2;
+
+}
