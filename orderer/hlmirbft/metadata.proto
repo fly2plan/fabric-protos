@@ -14,13 +14,15 @@ package hlmirbft;
 // block meta dta field and used after failres and restarts.
 message BlockMetadata {
     // Maintains a mapping between the cluster's OSNs
-    // and their MIrBFT IDs.
+    // and their Mir-BFT IDs.
     repeated uint64 consenter_ids = 1;
-    // Carries the MirBFT ID value that will be assigned
+    // Carries the Mir-BFT ID value that will be assigned
     // to the next OSN that will join this cluster.
     uint64 next_consenter_id = 2;
     // Index of MirBft entry for current block.
     uint64 mirbft_index = 3;
+    // Last Mir-BFT checkpoint sequence number reached by consensus
+    uint64 last_checkpoint_seq_no = 4;
 }
 
 // ClusterMetadata encapsulates metadata that is exchanged among cluster nodes
