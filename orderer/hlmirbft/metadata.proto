@@ -23,6 +23,8 @@ message BlockMetadata {
     uint64 mirbft_index = 3;
     // Last Mir-BFT checkpoint sequence number reached by consensus
     uint64 last_checkpoint_seq_no = 4;
+    // Contains the current agreed Mir-BFT network state
+    bytes network_state = 5;
 }
 
 // ClusterMetadata encapsulates metadata that is exchanged among cluster nodes
