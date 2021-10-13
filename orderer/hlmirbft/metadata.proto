@@ -25,6 +25,8 @@ message BlockMetadata {
     uint64 last_checkpoint_seq_no = 4;
     // Contains the current agreed Mir-BFT network state
     bytes network_state = 5;
+    // Contains the current agreed epoch configuration
+    bytes epoch_config = 6;
 }
 
 // ClusterMetadata encapsulates metadata that is exchanged among cluster nodes
