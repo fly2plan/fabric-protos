@@ -52,7 +52,9 @@ message Options {
      //JIRA FLY2-103 Adding Protocol parameters to config metadata
     int32  CheckpointInterval = 5;
     uint64 MaxEpochLength = 6;
-    int32  NumberOfBuckets  = 7;
+    int32  NumberOfBuckets = 7;
 
+    repeated int64 Loyalties = 8;
+    repeated uint64 Timeouts = 9;
 
 }
