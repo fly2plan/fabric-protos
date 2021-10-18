@@ -24,6 +24,12 @@ message Consenter {
     bytes server_tls_cert = 4;
 }
 
+// The status of a node
+message nodeStatus {
+    int64 loyalty = 1;
+    uint64 timeout = 2;
+}
+
 // Options to be specified for all the hyperledger-labs/mirbft nodes. These can be modified on a
 // per-channel basis.
 message Options {
@@ -54,7 +60,6 @@ message Options {
     uint64 MaxEpochLength = 6;
     int32  NumberOfBuckets = 7;
 
-    repeated int64 Loyalties = 8;
-    repeated uint64 Timeouts = 9;
+    repeated nodeStatus nodeStatuses = 8;
 
 }
